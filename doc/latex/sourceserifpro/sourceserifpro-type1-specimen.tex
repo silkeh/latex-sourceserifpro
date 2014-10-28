@@ -1,0 +1,20 @@
+\documentclass[12pt]{standalone}
+\usepackage{array}
+\usepackage[type1]{sourceserifpro}
+\newcommand*\spA{abcde}
+\newcommand*\spB{01469}
+\newcommand*\spr[1][\spA]{& #1 & #1 & #1 \\}
+\begin{document}
+\centering
+\begin{tabular}{
+		l 
+		>{\fontseries{m}\fontshape{n}\selectfont}c
+		>{\fontseries{sb}\fontshape{n}\selectfont}c
+		>{\fontseries{b}\fontshape{n}\selectfont}c }
+	& Regular & Semibold & Bold \\
+	normal               \spr
+	capitals             \spr[\MakeUppercase\spA]
+	lining               \spr[\spB]
+	old-style            \spr[\oldstylenums{\spB}]
+\end{tabular}
+\end{document}

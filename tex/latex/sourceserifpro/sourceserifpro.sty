@@ -1,0 +1,180 @@
+% Source Serif Pro for LaTeX
+%
+% Silke Hofstra, tex@slxh.nl
+%
+% This file selects either the OTF or the TYPE1 fonts based on
+% the LaTeX engine used.
+%
+% Licenced under the LPPL v1.3 or higher.
+%
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{sourceserifpro}[2014/09/17 v2.4 Adobe's Source Serif Pro typeface]
+
+\RequirePackage{ifxetex,ifluatex,xkeyval}
+
+% Switches
+\newif\ifsourceserifpro@otf
+\newif\ifsourceserifpro@default
+\newif\ifsourceserifpro@rmdefault
+\newif\ifsourceserifpro@oldstyle
+\newif\ifsourceserifpro@tabular
+\newif\ifsourceserifpro@semibold
+
+% Scaling command
+\newcommand*{\SourceSerifPro@scale}{1}
+
+% Use OpenType fonts for XeTeX and LuaTeX.
+\ifxetex
+	\sourceserifpro@otftrue
+\else
+	\ifluatex
+		\sourceserifpro@otftrue
+	\fi
+\fi
+
+\DeclareOptionX{lining}      {\sourceserifpro@oldstylefalse}
+\DeclareOptionX{nf}          {\sourceserifpro@oldstylefalse}
+\DeclareOptionX{lf}          {\sourceserifpro@oldstylefalse}
+\DeclareOptionX{oldstyle}    {\sourceserifpro@oldstyletrue}
+\DeclareOptionX{osf}         {\sourceserifpro@oldstyletrue}
+\DeclareOptionX{tabular}     {\sourceserifpro@tabulartrue}
+\DeclareOptionX{proportional}{\sourceserifpro@tabularfalse}
+\DeclareOptionX{semibold}    {\sourceserifpro@semiboldtrue}
+\DeclareOptionX{bold}        {\sourceserifpro@semiboldfalse}
+\DeclareOptionX{regular}     {}
+\DeclareOptionX{scale}       {\renewcommand*{\SourceSerifPro@scale}{#1}}
+\DeclareOptionX{scaled}      {\renewcommand*{\SourceSerifPro@scale}{#1}}
+\DeclareOptionX{default}     {\sourceserifpro@defaulttrue}
+\DeclareOptionX{rmdefault}   {\sourceserifpro@rmdefaulttrue}
+\DeclareOptionX{normdefault} {\sourceserifpro@rmdefaultfalse}
+\DeclareOptionX{type1}       {\sourceserifpro@otffalse}
+\DeclareOptionX{t1}          {\sourceserifpro@otffalse}
+\DeclareOptionX{opentype}    {\sourceserifpro@otftrue}
+\DeclareOptionX{otf}         {\sourceserifpro@otftrue}
+
+% Default options
+\ExecuteOptionsX{rmdefault,lining,proportional,bold,regular}
+\ProcessOptionsX\relax
+
+% Load OpenType files
+\ifsourceserifpro@otf
+	\RequirePackage{fontspec}
+	
+	% Oldstyle/Lining
+	\ifsourceserifpro@oldstyle
+		\def\sourceserifpro@figurestyle{OldStyle}
+	\else
+		\def\sourceserifpro@figurestyle{}
+	\fi
+	
+	% Tabular/Proportional
+	\ifsourceserifpro@tabular
+		\def\sourceserifpro@figurealign{Monospaced}
+	\else
+		\def\sourceserifpro@figurealign{Proportional}
+	\fi
+	
+	% Semibold/Bold
+	\ifsourceserifpro@semibold
+		\def\sourceserifpro@boldstyle{Semibold}
+	\else
+		\def\sourceserifpro@boldstyle{Bold}
+	\fi
+	
+	% Regular
+	\def\sourceserifpro@regstyle{Regular}
+	
+	% Shared features
+	\defaultfontfeatures{
+		Ligatures = TeX ,
+		Numbers   = {\sourceserifpro@figurealign , \sourceserifpro@figurestyle } ,
+		Scale     = \SourceSerifPro@scale ,
+		Extension = .otf }
+
+	% Serif font
+	\ifsourceserifpro@rmdefault
+		\setmainfont
+			[ UprightFont    = *-\sourceserifpro@regstyle ,
+			  BoldFont       = *-\sourceserifpro@boldstyle ]
+			{SourceSerifPro}
+	\fi
+	
+	% Font families
+	% Regular/Bold
+	\newfontfamily\sourceserifpro
+		[ UprightFont    = *-Regular ,
+		  BoldFont       = *-Bold ]
+		{SourceSerifPro}
+	
+	% Regular/Semibold
+	\newfontfamily\sourceserifprosemibold
+		[ UprightFont    = *-Regular ,
+		  BoldFont       = *-Semibold ]
+		{SourceSerifPro}
+		
+	% Lining figures
+	\newfontfamily\sourceserifprolf
+		[ Numbers        = \sourceserifpro@figurealign ,
+		  UprightFont    = *-\sourceserifpro@regstyle ,
+		  BoldFont       = *-\sourceserifpro@boldstyle ]
+		{SourceSerifPro}
+	
+	% Dont keep all default font features
+	\defaultfontfeatures{}
+
+% Load type1 font.
+\else
+	\RequirePackage[OT1,LY1,T1]{fontenc}
+	\RequirePackage{mweights}
+
+	% Oldstyle/Lining
+	\ifsourceserifpro@oldstyle
+		\def\sourceserifpro@figurestyle{OsF}
+	\else
+		\def\sourceserifpro@figurestyle{LF}
+	\fi
+	
+	% Tabular/Proportional
+	\ifsourceserifpro@tabular
+		\def\sourceserifpro@figurealign{T}
+	\else
+		\def\sourceserifpro@figurealign{}
+	\fi
+	
+	% Semibold/Bold
+	\ifsourceserifpro@semibold
+		\def\bfseries@rm{sb}
+	\else
+		\def\bfseries@rm{b}
+	\fi
+	
+	% Regular
+	\def\mdseries@rm{m}
+
+	% Sans serif font
+	\ifsourceserifpro@rmdefault
+		\edef\rmdefault{SourceSerifPro-\sourceserifpro@figurealign\sourceserifpro@figurestyle}
+	\fi
+	
+	% If Source Serif Pro is the default font \oldstylenums needs a new definition.
+	\let\nativeoldstylenums\oldstylenums
+	\ifsourceserifpro@rmdefault
+		\renewcommand*\oldstylenums[1]{%
+			\begingroup
+				\ifmmode
+					\mathgroup\symletters #1%
+				\else
+					\fontfamily{SourceSerifPro-\sourceserifpro@figurealign OsF}\selectfont #1%
+				\fi
+			\endgroup
+		}
+		\edef\seriesdefault{\mdseries@rm}
+	\fi
+\fi
+
+% Set default font family
+\ifsourceserifpro@default
+	\edef\familydefault{\rmdefault}
+\fi
+
+\endinput
