@@ -46,8 +46,9 @@ autoinst fonts/opentype/$vend/$font/*   \
     -noupdmap
 
 # Move the generated file and the hand-written one back
-mv tex/latex/$font/$fontcap.sty tex/latex/$font/$font-type1-autoinst.sty
+mv tex/latex/$font/$fontname.sty tex/latex/$font/$font-type1-autoinst.sty
 mv tex/latex/$font/$font.sty.tmp tex/latex/$font/$font.sty
 
 # Remove empty directories
 find . -type d -empty -delete
+

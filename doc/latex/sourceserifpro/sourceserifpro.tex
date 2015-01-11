@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,english]{article}
+\documentclass[10pt,a4paper,english]{article}
 \usepackage{geometry,dtklogos,hyperref,babel,mdwlist,array,multicol}
 \usepackage[default,osf]{sourceserifpro}
 \usepackage[scaled=.95]{sourcecodepro}
@@ -18,12 +18,12 @@
 }
 
 \author{Silke Hofstra, \href{mailto:tex@slxh.nl}{tex@slxh.nl}}
-\date{Documentation for sourceserifpro v1.0.\\ \today}
+\date{Documentation for sourceserifpro v1.1.\\ \today}
 
 \begin{document}
 \maketitle
 \begin{multicols}{2}
-This package provides the Source Serif Pro font in an easy to use way. For \XeLaTeX\ and \LuaLaTeX\ users the original OpenType fonts are used. The entire font family is included, which can also be downloaded from \href{sourceforge.net/projects/sourceserifpro.adobe}{SourceForge}.
+This package provides the Source Serif Pro font in an easy to use way. For \XeLaTeX\ and \LuaLaTeX\ users the original OpenType fonts are used. The entire font family is included, which can also be downloaded from \href{https://github.com/adobe-fonts/source-serif-pro}{GitHub}.
 
 \section{Options}
 The package has the following options:
@@ -32,12 +32,15 @@ The package has the following options:
 	\item \textbf{lining, nf, lf}: use lining numbers.
 	\item \textbf{tabular}:        use fixed-width numbers.
 	\item \textbf{proportional}:   use normal numbers.
+	\item \textbf{black}:          \texttt{\textbackslash bfseries} is black.
 	\item \textbf{semibold}:       \texttt{\textbackslash bfseries} is semibold.
 	\item \textbf{bold}:           \texttt{\textbackslash bfseries} is bold.
+	\item \textbf{light}:          \texttt{\textbackslash mdseries} is light.
+	\item \textbf{extralight}:     \texttt{\textbackslash mdseries} is extra light.
 	\item \textbf{regular}:        \texttt{\textbackslash mdseries} is regular.
 	\item \textbf{scale, scaled}:  Change the scaling with a factor. For example:  \texttt{scale=.5}
-	\item \textbf{default}:        Source Sans Pro is set as the default font family.
-	\item \textbf{normdefault}:    Source Sans Pro is not set as the roman (serif) family.
+	\item \textbf{default}:        Source Serif Pro is set as the default font family.
+	\item \textbf{normdefault}:    Source Serif Pro is not set as the roman (serif) family.
 	\item \textbf{type1, t1}:      Override automatic detection and use the Type 1 fonts.
 	\item \textbf{opentype, otf}:  Override automatic detection and use OpenType fonts.
 \end{itemize*}
@@ -48,8 +51,10 @@ Commands for all weights are also provided for \XeLaTeX\ and \LuaLaTeX\ users.
 \begin{itemize*}
 	\item \texttt{\bfseries \textbackslash sourceserifpro}
 		-- the regular and bold weights.
-	\item \texttt{\bfseries \textbackslash sourceserifprosemibold}
-		-- the regular and semibold weights.
+	\item \texttt{\bfseries \textbackslash sourceserifprolight}
+		-- the light and semibold weights.
+	\item \texttt{\bfseries \textbackslash sourceserifproextreme}
+		-- the extra light and black weights.
 \end{itemize*}
 
 \section{Licence}
@@ -67,9 +72,12 @@ A complete list of available font features is available on page \pageref{sec:otf
 
 \subsection{Files}
 \begin{itemize*}
+	\item SourceSerifPro-Black.otf
+	\item SourceSerifPro-ExtraLight.otf
 	\item SourceSerifPro-Regular.otf
-	\item SourceSerifPro-Semibold.otf
 	\item SourceSerifPro-Bold.otf
+	\item SourceSerifPro-Light.otf
+	\item SourceSerifPro-Semibold.otf
 \end{itemize*}
 
 \section{Type1}
@@ -80,19 +88,24 @@ The following Type1 font families are included:
 	\item SourceSerifPro-OsF
 	\item SourceSerifPro-TOsF
 \end{itemize*}
-With series ‘m’, and ‘sb’, and shape ‘n’.
+With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘k’ and shape ‘n’.
 
 \section{Version history}
+\subsection*{1.1}
+\begin{itemize*}
+	\item Updated package with fonts 1.017
+\end{itemize*}
+
 \subsection*{1.0}
-\begin{itemize}
+\begin{itemize*}
 	\item Initial release with fonts 1.014
-\end{itemize}
+\end{itemize*}
 
 \section{Known issues}
 \begin{itemize*}
 	\item There are no known issues.
 \end{itemize*}
-
+\vspace{0pt plus 1filll}\mbox{}
 \newpage
 \end{multicols}
 

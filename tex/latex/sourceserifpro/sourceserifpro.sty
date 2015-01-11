@@ -8,7 +8,7 @@
 % Licenced under the LPPL v1.3 or higher.
 %
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
-\ProvidesPackage{sourceserifpro}[2014/09/17 v2.4 Adobe's Source Serif Pro typeface]
+\ProvidesPackage{sourceserifpro}[2015/01/11 v1.1 Adobe's Source Serif Pro typeface]
 
 \RequirePackage{ifxetex,ifluatex,xkeyval}
 
@@ -18,7 +18,10 @@
 \newif\ifsourceserifpro@rmdefault
 \newif\ifsourceserifpro@oldstyle
 \newif\ifsourceserifpro@tabular
+\newif\ifsourceserifpro@black
 \newif\ifsourceserifpro@semibold
+\newif\ifsourceserifpro@light
+\newif\ifsourceserifpro@extralight
 
 % Scaling command
 \newcommand*{\SourceSerifPro@scale}{1}
@@ -39,9 +42,12 @@
 \DeclareOptionX{osf}         {\sourceserifpro@oldstyletrue}
 \DeclareOptionX{tabular}     {\sourceserifpro@tabulartrue}
 \DeclareOptionX{proportional}{\sourceserifpro@tabularfalse}
-\DeclareOptionX{semibold}    {\sourceserifpro@semiboldtrue}
-\DeclareOptionX{bold}        {\sourceserifpro@semiboldfalse}
-\DeclareOptionX{regular}     {}
+\DeclareOptionX{black}       {\sourceserifpro@blacktrue \sourceserifpro@semiboldfalse}
+\DeclareOptionX{semibold}    {\sourceserifpro@blackfalse\sourceserifpro@semiboldtrue}
+\DeclareOptionX{bold}        {\sourceserifpro@blackfalse\sourceserifpro@semiboldfalse}
+\DeclareOptionX{light}       {\sourceserifpro@lighttrue \sourceserifpro@extralightfalse}
+\DeclareOptionX{extralight}  {\sourceserifpro@lightfalse\sourceserifpro@extralighttrue}
+\DeclareOptionX{regular}     {\sourceserifpro@lightfalse\sourceserifpro@extralightfalse}
 \DeclareOptionX{scale}       {\renewcommand*{\SourceSerifPro@scale}{#1}}
 \DeclareOptionX{scaled}      {\renewcommand*{\SourceSerifPro@scale}{#1}}
 \DeclareOptionX{default}     {\sourceserifpro@defaulttrue}
@@ -74,15 +80,27 @@
 		\def\sourceserifpro@figurealign{Proportional}
 	\fi
 	
-	% Semibold/Bold
-	\ifsourceserifpro@semibold
-		\def\sourceserifpro@boldstyle{Semibold}
+	% Black/Semibold/Bold
+	\ifsourceserifpro@black
+		\def\sourceserifpro@boldstyle{Black}
 	\else
-		\def\sourceserifpro@boldstyle{Bold}
+		\ifsourceserifpro@semibold
+			\def\sourceserifpro@boldstyle{Semibold}
+		\else
+			\def\sourceserifpro@boldstyle{Bold}
+		\fi
 	\fi
 	
-	% Regular
-	\def\sourceserifpro@regstyle{Regular}
+	% Light/ExtraLight/Regular
+	\ifsourceserifpro@light
+		\def\sourceserifpro@regstyle{Light}
+	\else
+		\ifsourceserifpro@extralight
+			\def\sourceserifpro@regstyle{ExtraLight}
+		\else
+			\def\sourceserifpro@regstyle{Regular}
+		\fi
+	\fi
 	
 	% Shared features
 	\defaultfontfeatures{
@@ -106,10 +124,16 @@
 		  BoldFont       = *-Bold ]
 		{SourceSerifPro}
 	
-	% Regular/Semibold
-	\newfontfamily\sourceserifprosemibold
-		[ UprightFont    = *-Regular ,
+	% Light/Semibold
+	\newfontfamily\sourceserifprolight
+		[ UprightFont    = *-Light ,
 		  BoldFont       = *-Semibold ]
+		{SourceSerifPro}
+	
+	% ExtraLight/Black
+	\newfontfamily\sourceserifproextreme
+		[ UprightFont    = *-ExtraLight  ,
+		  BoldFont       = *-Black  ]
 		{SourceSerifPro}
 		
 	% Lining figures
