@@ -11,25 +11,7 @@ font=${fontname,,}
 # Backup the hand-written package
 mv tex/latex/$font/$font.sty tex/latex/$font/$font.sty.tmp
 
-# Font features (font v1.014)
-# aalt    Access All Alternates
-# case    Case-Sensitive Forms
-# dnom    Denominators
-# frac    Fractions
-# kern    Kerning
-# liga    Standard Ligatures
-# lnum    Lining Figures
-# numr    Numerators
-# onum    Oldstyle Figures
-# ordn    Ordinals
-# pnum    Proportional Figures
-# sinf    Scientific Inferiors
-# size    Optical Size
-# subs    Subscript
-# sups    Superscript
-# tnum    Tabular Figures
-# zero    Slashed Zero
-
+# Convert the OpenType fonts
 autoinst fonts/opentype/$vend/$font/*   \
     -target=.                           \
     -vendor="$vend"                     \
