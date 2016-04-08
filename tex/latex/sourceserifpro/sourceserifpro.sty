@@ -165,15 +165,27 @@
 		\def\sourceserifpro@figurealign{}
 	\fi
 	
-	% Semibold/Bold
-	\ifsourceserifpro@semibold
-		\def\bfseries@rm{sb}
+	% Black/Semibold/Bold
+	\ifsourceserifpro@black
+		\def\bfseries@rm{k}
 	\else
-		\def\bfseries@rm{b}
+		\ifsourceserifpro@semibold
+			\def\bfseries@rm{sb}
+		\else
+			\def\bfseries@rm{b}
+		\fi
 	\fi
 	
-	% Regular
-	\def\mdseries@rm{m}
+	% Light/ExtraLight/Regular
+	\ifsourceserifpro@light
+		\def\mdseries@rm{l}
+	\else
+		\ifsourceserifpro@extralight
+			\def\mdseries@rm{el}
+		\else
+			\def\mdseries@rm{m}
+		\fi
+	\fi
 
 	% Sans serif font
 	\ifsourceserifpro@rmdefault
