@@ -11,10 +11,13 @@ The following options can be used:
 * `lining, nf`:    use lining numbers.
 * `tabular`:       use fixed-width numbers.
 * `proportional`:  use normal numbers.
+* `black`:         `\bfseries` is black.
 * `semibold`:      `\bfseries` is semibold.
 * `bold`:          `\bfseries` is bold.
+* `light`:         `\mdseries` is light.
+* `extralight`:    `\mdseries` is extra light.
 * `regular`:       `\mdseries` is regular.
-* `scale, scaled`: set scaling for the font, eg: scale=.5
+* `scale, scaled`: set scaling for the font, eg: `scale=.5`
 * `default`:       Source Serif Pro is set as default font family.
 * `normdefault`:   Source Serif Pro is not set as roman (serif) family.
 * `type1, t1`:     override detection and load the Type1 font family.
