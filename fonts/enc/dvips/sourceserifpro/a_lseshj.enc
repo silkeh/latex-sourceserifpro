@@ -1,0 +1,67 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_lseshjlbcnmaaockgepg55lppg
+% Encoding created by otftotfm on Wed Sep  5 11:16:43 2018
+% Command line follows encoding
+/AutoEnc_lseshjlbcnmaaockgepg55lppg [
+%00
+  /grave /acute /circumflex /tilde /dieresis /hungarumlaut /ring /caron
+  /breve /macron /dotaccent /cedilla /ogonek /quotesinglbase /guilsinglleft /guilsinglright
+%10
+  /quotedblleft /quotedblright /quotedblbase /guillemotleft /guillemotright /endash /emdash /.notdef
+  /.notdef /I.sc /J.sc /.notdef /.notdef /.notdef /.notdef /.notdef
+%20
+  /.notdef /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.sc /one.sc /two.sc /three.sc /four.sc /five.sc /six.sc /seven.sc
+  /eight.sc /nine.sc /colon /semicolon /less /equal /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+%60
+  /quoteleft /A.sc /B.sc /C.sc /D.sc /E.sc /F.sc /G.sc
+  /H.sc /I.sc /J.sc /K.sc /L.sc /M.sc /N.sc /O.sc
+%70
+  /P.sc /Q.sc /R.sc /S.sc /T.sc /U.sc /V.sc /W.sc
+  /X.sc /Y.sc /Z.sc /braceleft /bar /braceright /asciitilde /hyphen
+%80
+  /Abreve /Aogonek /Cacute /Ccaron /Dcaron /Ecaron /Eogonek /Gbreve
+  /Lacute /Lcaron /Lslash /Nacute /Ncaron /.notdef /Ohungarumlaut /Racute
+%90
+  /Rcaron /Sacute /Scaron /uni015E /Tcaron /uni0162 /Uhungarumlaut /Uring
+  /Ydieresis /Zacute /Zcaron /Zdotaccent /.notdef /Idotaccent /Dcroat.sc /section
+%A0
+  /Abreve.sc /Aogonek.sc /Cacute.sc /Ccaron.sc /Dcaron.sc /Ecaron.sc /Eogonek.sc /Gbreve.sc
+  /Lacute.sc /Lcaron.sc /Lslash.sc /Nacute.sc /Ncaron.sc /.notdef /Ohungarumlaut.sc /Racute.sc
+%B0
+  /Rcaron.sc /Sacute.sc /Scaron.sc /uni015E.sc /Tcaron.sc /uni0162.sc /Uhungarumlaut.sc /Uring.sc
+  /Ydieresis.sc /Zacute.sc /Zcaron.sc /Zdotaccent.sc /.notdef /exclamdown /questiondown /sterling
+%C0
+  /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+  /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+%D0
+  /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /OE
+  /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /.notdef
+%E0
+  /Agrave.sc /Aacute.sc /Acircumflex.sc /Atilde.sc /Adieresis.sc /Aring.sc /AE.sc /Ccedilla.sc
+  /Egrave.sc /Eacute.sc /Ecircumflex.sc /Edieresis.sc /Igrave.sc /Iacute.sc /Icircumflex.sc /Idieresis.sc
+%F0
+  /Eth.sc /Ntilde.sc /Ograve.sc /Oacute.sc /Ocircumflex.sc /Otilde.sc /Odieresis.sc /OE.sc
+  /Oslash.sc /Ugrave.sc /Uacute.sc /Ucircumflex.sc /Udieresis.sc /Yacute.sc /Thorn.sc /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_t1
+% --tfm-directory=fonts/tfm/adobe/sourceserifpro
+% --vf-directory=fonts/vf/adobe/sourceserifpro
+% --type1-directory=fonts/type1/adobe/sourceserifpro
+% --truetype-directory=fonts/truetype/adobe/sourceserifpro
+% --encoding-directory=fonts/enc/dvips/sourceserifpro
+% --map-file=fonts/map/dvips/sourceserifpro/SourceSerifPro.map --no-updmap
+% --coding-scheme=EXTENDED TEX FONT ENCODING - LATIN --feature=kern
+% --feature=liga --feature=lnum --feature=pnum --feature=smcp
+% --unicoding=germandbls =: SSsmall
+% fonts/opentype/adobe/sourceserifpro/SourceSerifPro-Black.otf
+% SourceSerifPro-Black-lf-sc-t1'
