@@ -11,36 +11,12 @@
 
 \DeclareFontFamily{TS1}{SourceSerifPro-LF}{}
 
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{l}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-lf-ts1
-}{}
-
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{l}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Light-lf-ts1
-}{}
-
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{l}{sl}{
-      <-> ssub * SourceSerifPro-LF/l/it
-}{}
-
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-lf-ts1
-}{}
-
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-lf-ts1
-}{}
-
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{b}{sl}{
-      <-> ssub * SourceSerifPro-LF/b/it
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-lf-ts1
 }{}
 
 \DeclareFontShape{TS1}{SourceSerifPro-LF}{el}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-lf-ts1
-}{}
-
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-lf-ts1
 }{}
 
 \DeclareFontShape{TS1}{SourceSerifPro-LF}{el}{sl}{
@@ -59,28 +35,56 @@
       <-> ssub * SourceSerifPro-LF/m/it
 }{}
 
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{k}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Black-lf-ts1
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-lf-ts1
 }{}
 
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-lf-ts1
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-lf-ts1
 }{}
 
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{k}{sl}{
-      <-> ssub * SourceSerifPro-LF/k/it
-}{}
-
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{sb}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-lf-ts1
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{b}{sl}{
+      <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
 \DeclareFontShape{TS1}{SourceSerifPro-LF}{sb}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-lf-ts1
 }{}
 
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{sb}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-lf-ts1
+}{}
+
 \DeclareFontShape{TS1}{SourceSerifPro-LF}{sb}{sl}{
       <-> ssub * SourceSerifPro-LF/sb/it
+}{}
+
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{l}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Light-lf-ts1
+}{}
+
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{l}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-lf-ts1
+}{}
+
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{l}{sl}{
+      <-> ssub * SourceSerifPro-LF/l/it
+}{}
+
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-lf-ts1
+}{}
+
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{k}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Black-lf-ts1
+}{}
+
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{k}{sl}{
+      <-> ssub * SourceSerifPro-LF/k/it
+}{}
+
+\DeclareFontShape{TS1}{SourceSerifPro-LF}{bx}{it}{
+      <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
 \DeclareFontShape{TS1}{SourceSerifPro-LF}{bx}{n}{
@@ -89,10 +93,6 @@
 
 \DeclareFontShape{TS1}{SourceSerifPro-LF}{bx}{sl}{
       <-> ssub * SourceSerifPro-LF/b/sl
-}{}
-
-\DeclareFontShape{TS1}{SourceSerifPro-LF}{bx}{it}{
-      <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
 \endinput

@@ -11,6 +11,18 @@
 
 \DeclareFontFamily{LY1}{SourceSerifPro-Numr}{}
 
+\DeclareFontShape{LY1}{SourceSerifPro-Numr}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-numr-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Numr}{k}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Black-numr-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Numr}{k}{sl}{
+      <-> ssub * SourceSerifPro-Numr/k/it
+}{}
+
 \DeclareFontShape{LY1}{SourceSerifPro-Numr}{l}{n}{
       <-> \SourceSerifPro@@scale SourceSerifPro-Light-numr-ly1
 }{}
@@ -35,48 +47,36 @@
       <-> ssub * SourceSerifPro-Numr/b/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Numr}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-numr-ly1
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-Numr}{el}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-numr-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Numr}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-numr-ly1
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-Numr}{el}{sl}{
       <-> ssub * SourceSerifPro-Numr/el/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Numr}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-numr-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Numr}{k}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Black-numr-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Numr}{k}{sl}{
-      <-> ssub * SourceSerifPro-Numr/k/it
+\DeclareFontShape{LY1}{SourceSerifPro-Numr}{m}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-numr-ly1
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-Numr}{m}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-It-numr-ly1
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Numr}{m}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-numr-ly1
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-Numr}{m}{sl}{
       <-> ssub * SourceSerifPro-Numr/m/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Numr}{sb}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-numr-ly1
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-Numr}{sb}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-numr-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Numr}{sb}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-numr-ly1
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-Numr}{sb}{sl}{
@@ -87,12 +87,12 @@
       <-> ssub * SourceSerifPro-Numr/b/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Numr}{bx}{sl}{
-      <-> ssub * SourceSerifPro-Numr/b/sl
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-Numr}{bx}{n}{
       <-> ssub * SourceSerifPro-Numr/b/n
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Numr}{bx}{sl}{
+      <-> ssub * SourceSerifPro-Numr/b/sl
 }{}
 
 \endinput

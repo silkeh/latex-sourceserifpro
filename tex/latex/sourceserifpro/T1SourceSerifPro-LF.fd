@@ -23,16 +23,28 @@
       <-> ssub * SourceSerifPro-LF/l/it
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-LF}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-lf-t1
+\DeclareFontShape{T1}{SourceSerifPro-LF}{k}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Black-lf-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-LF}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-lf-t1
+\DeclareFontShape{T1}{SourceSerifPro-LF}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-lf-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-LF}{b}{sl}{
-      <-> ssub * SourceSerifPro-LF/b/it
+\DeclareFontShape{T1}{SourceSerifPro-LF}{k}{sl}{
+      <-> ssub * SourceSerifPro-LF/k/it
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-LF}{m}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-lf-t1
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-LF}{m}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-It-lf-t1
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-LF}{m}{sl}{
+      <-> ssub * SourceSerifPro-LF/m/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-LF}{el}{n}{
@@ -47,48 +59,36 @@
       <-> ssub * SourceSerifPro-LF/el/it
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-LF}{k}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Black-lf-t1
+\DeclareFontShape{T1}{SourceSerifPro-LF}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-lf-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-LF}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-lf-t1
+\DeclareFontShape{T1}{SourceSerifPro-LF}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-lf-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-LF}{k}{sl}{
-      <-> ssub * SourceSerifPro-LF/k/it
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-LF}{m}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-It-lf-t1
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-LF}{m}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-lf-t1
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-LF}{m}{sl}{
-      <-> ssub * SourceSerifPro-LF/m/it
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-LF}{sb}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-lf-t1
+\DeclareFontShape{T1}{SourceSerifPro-LF}{b}{sl}{
+      <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-LF}{sb}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-lf-t1
 }{}
 
+\DeclareFontShape{T1}{SourceSerifPro-LF}{sb}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-lf-t1
+}{}
+
 \DeclareFontShape{T1}{SourceSerifPro-LF}{sb}{sl}{
       <-> ssub * SourceSerifPro-LF/sb/it
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-LF}{bx}{it}{
-      <-> ssub * SourceSerifPro-LF/b/it
-}{}
-
 \DeclareFontShape{T1}{SourceSerifPro-LF}{bx}{sl}{
       <-> ssub * SourceSerifPro-LF/b/sl
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-LF}{bx}{it}{
+      <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-LF}{bx}{n}{

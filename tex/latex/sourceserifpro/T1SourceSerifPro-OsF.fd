@@ -11,16 +11,16 @@
 
 \DeclareFontFamily{T1}{SourceSerifPro-OsF}{}
 
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-osf-t1
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{m}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-It-osf-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-osf-t1
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{m}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-osf-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{b}{sl}{
-      <-> ssub * SourceSerifPro-OsF/b/it
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{m}{sl}{
+      <-> ssub * SourceSerifPro-OsF/m/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-OsF}{el}{it}{
@@ -35,16 +35,16 @@
       <-> ssub * SourceSerifPro-OsF/el/it
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{l}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-osf-t1
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-osf-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{l}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Light-osf-t1
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-osf-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{l}{sl}{
-      <-> ssub * SourceSerifPro-OsF/l/it
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{b}{sl}{
+      <-> ssub * SourceSerifPro-OsF/b/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-OsF}{sb}{it}{
@@ -59,28 +59,32 @@
       <-> ssub * SourceSerifPro-OsF/sb/it
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-osf-t1
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{l}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Light-osf-t1
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{l}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-osf-t1
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{l}{sl}{
+      <-> ssub * SourceSerifPro-OsF/l/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-OsF}{k}{n}{
       <-> \SourceSerifPro@@scale SourceSerifPro-Black-osf-t1
 }{}
 
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-osf-t1
+}{}
+
 \DeclareFontShape{T1}{SourceSerifPro-OsF}{k}{sl}{
       <-> ssub * SourceSerifPro-OsF/k/it
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{m}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-osf-t1
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{m}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-It-osf-t1
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{m}{sl}{
-      <-> ssub * SourceSerifPro-OsF/m/it
+\DeclareFontShape{T1}{SourceSerifPro-OsF}{bx}{n}{
+      <-> ssub * SourceSerifPro-OsF/b/n
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-OsF}{bx}{it}{
@@ -89,10 +93,6 @@
 
 \DeclareFontShape{T1}{SourceSerifPro-OsF}{bx}{sl}{
       <-> ssub * SourceSerifPro-OsF/b/sl
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-OsF}{bx}{n}{
-      <-> ssub * SourceSerifPro-OsF/b/n
 }{}
 
 \endinput

@@ -11,52 +11,40 @@
 
 \DeclareFontFamily{LY1}{SourceSerifPro-Dnom}{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-dnom-ly1
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{k}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Black-dnom-ly1
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-dnom-ly1
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-dnom-ly1
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{b}{sl}{
-      <-> ssub * SourceSerifPro-Dnom/b/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{el}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-dnom-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-dnom-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{el}{sl}{
-      <-> ssub * SourceSerifPro-Dnom/el/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{l}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Light-dnom-ly1
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{k}{sl}{
+      <-> ssub * SourceSerifPro-Dnom/k/it
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-Dnom}{l}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-dnom-ly1
 }{}
 
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{l}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Light-dnom-ly1
+}{}
+
 \DeclareFontShape{LY1}{SourceSerifPro-Dnom}{l}{sl}{
       <-> ssub * SourceSerifPro-Dnom/l/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{sb}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-dnom-ly1
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-dnom-ly1
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{sb}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-dnom-ly1
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-dnom-ly1
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{sb}{sl}{
-      <-> ssub * SourceSerifPro-Dnom/sb/it
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{b}{sl}{
+      <-> ssub * SourceSerifPro-Dnom/b/it
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-Dnom}{m}{n}{
@@ -71,28 +59,40 @@
       <-> ssub * SourceSerifPro-Dnom/m/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-dnom-ly1
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{el}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-dnom-ly1
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{k}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Black-dnom-ly1
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-dnom-ly1
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{k}{sl}{
-      <-> ssub * SourceSerifPro-Dnom/k/it
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{el}{sl}{
+      <-> ssub * SourceSerifPro-Dnom/el/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{bx}{sl}{
-      <-> ssub * SourceSerifPro-Dnom/b/sl
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{sb}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-dnom-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{sb}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-dnom-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{sb}{sl}{
+      <-> ssub * SourceSerifPro-Dnom/sb/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{bx}{n}{
+      <-> ssub * SourceSerifPro-Dnom/b/n
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-Dnom}{bx}{it}{
       <-> ssub * SourceSerifPro-Dnom/b/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{bx}{n}{
-      <-> ssub * SourceSerifPro-Dnom/b/n
+\DeclareFontShape{LY1}{SourceSerifPro-Dnom}{bx}{sl}{
+      <-> ssub * SourceSerifPro-Dnom/b/sl
 }{}
 
 \endinput

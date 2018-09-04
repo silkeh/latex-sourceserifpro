@@ -11,42 +11,6 @@
 
 \DeclareFontFamily{OT1}{SourceSerifPro-TOsF}{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{m}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-tosf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{m}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-It-tosf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{m}{sl}{
-      <-> ssub * SourceSerifPro-TOsF/m/it
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-tosf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{k}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Black-tosf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{k}{sl}{
-      <-> ssub * SourceSerifPro-TOsF/k/it
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{sb}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-tosf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{sb}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-tosf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{sb}{sl}{
-      <-> ssub * SourceSerifPro-TOsF/sb/it
-}{}
-
 \DeclareFontShape{OT1}{SourceSerifPro-TOsF}{l}{n}{
       <-> \SourceSerifPro@@scale SourceSerifPro-Light-tosf-ot1
 }{}
@@ -59,16 +23,28 @@
       <-> ssub * SourceSerifPro-TOsF/l/it
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-tosf-ot1
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{k}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Black-tosf-ot1
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-tosf-ot1
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-tosf-ot1
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{b}{sl}{
-      <-> ssub * SourceSerifPro-TOsF/b/it
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{k}{sl}{
+      <-> ssub * SourceSerifPro-TOsF/k/it
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{m}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-tosf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{m}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-It-tosf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{m}{sl}{
+      <-> ssub * SourceSerifPro-TOsF/m/it
 }{}
 
 \DeclareFontShape{OT1}{SourceSerifPro-TOsF}{el}{it}{
@@ -83,16 +59,40 @@
       <-> ssub * SourceSerifPro-TOsF/el/it
 }{}
 
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-tosf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-tosf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{b}{sl}{
+      <-> ssub * SourceSerifPro-TOsF/b/it
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{sb}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-tosf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{sb}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-tosf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{sb}{sl}{
+      <-> ssub * SourceSerifPro-TOsF/sb/it
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{bx}{n}{
+      <-> ssub * SourceSerifPro-TOsF/b/n
+}{}
+
 \DeclareFontShape{OT1}{SourceSerifPro-TOsF}{bx}{it}{
       <-> ssub * SourceSerifPro-TOsF/b/it
 }{}
 
 \DeclareFontShape{OT1}{SourceSerifPro-TOsF}{bx}{sl}{
       <-> ssub * SourceSerifPro-TOsF/b/sl
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-TOsF}{bx}{n}{
-      <-> ssub * SourceSerifPro-TOsF/b/n
 }{}
 
 \endinput

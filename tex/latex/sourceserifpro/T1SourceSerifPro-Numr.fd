@@ -11,40 +11,28 @@
 
 \DeclareFontFamily{T1}{SourceSerifPro-Numr}{}
 
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-numr-t1
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{el}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-numr-t1
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{el}{sl}{
-      <-> ssub * SourceSerifPro-Numr/el/it
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-numr-t1
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-numr-t1
-}{}
-
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{b}{sl}{
-      <-> ssub * SourceSerifPro-Numr/b/it
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{l}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Light-numr-t1
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-Numr}{l}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-numr-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{l}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Light-numr-t1
-}{}
-
 \DeclareFontShape{T1}{SourceSerifPro-Numr}{l}{sl}{
       <-> ssub * SourceSerifPro-Numr/l/it
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-numr-t1
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{k}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Black-numr-t1
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{k}{sl}{
+      <-> ssub * SourceSerifPro-Numr/k/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-Numr}{sb}{it}{
@@ -59,16 +47,16 @@
       <-> ssub * SourceSerifPro-Numr/sb/it
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{k}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Black-numr-t1
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-numr-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-numr-t1
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{el}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-numr-t1
 }{}
 
-\DeclareFontShape{T1}{SourceSerifPro-Numr}{k}{sl}{
-      <-> ssub * SourceSerifPro-Numr/k/it
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{el}{sl}{
+      <-> ssub * SourceSerifPro-Numr/el/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-Numr}{m}{it}{
@@ -81,6 +69,18 @@
 
 \DeclareFontShape{T1}{SourceSerifPro-Numr}{m}{sl}{
       <-> ssub * SourceSerifPro-Numr/m/it
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-numr-t1
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-numr-t1
+}{}
+
+\DeclareFontShape{T1}{SourceSerifPro-Numr}{b}{sl}{
+      <-> ssub * SourceSerifPro-Numr/b/it
 }{}
 
 \DeclareFontShape{T1}{SourceSerifPro-Numr}{bx}{n}{

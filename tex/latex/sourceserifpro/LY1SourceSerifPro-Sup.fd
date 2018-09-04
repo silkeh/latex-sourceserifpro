@@ -11,66 +11,6 @@
 
 \DeclareFontFamily{LY1}{SourceSerifPro-Sup}{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{el}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{el}{sl}{
-      <-> ssub * SourceSerifPro-Sup/el/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{b}{sl}{
-      <-> ssub * SourceSerifPro-Sup/b/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{l}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Light-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{l}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{l}{sl}{
-      <-> ssub * SourceSerifPro-Sup/l/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{sb}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{sb}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{sb}{sl}{
-      <-> ssub * SourceSerifPro-Sup/sb/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{m}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-It-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{m}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-sup-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{m}{sl}{
-      <-> ssub * SourceSerifPro-Sup/m/it
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-Sup}{k}{n}{
       <-> \SourceSerifPro@@scale SourceSerifPro-Black-sup-ly1
 }{}
@@ -83,16 +23,76 @@
       <-> ssub * SourceSerifPro-Sup/k/it
 }{}
 
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{l}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{l}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Light-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{l}{sl}{
+      <-> ssub * SourceSerifPro-Sup/l/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{b}{sl}{
+      <-> ssub * SourceSerifPro-Sup/b/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{m}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{m}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-It-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{m}{sl}{
+      <-> ssub * SourceSerifPro-Sup/m/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{el}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{el}{sl}{
+      <-> ssub * SourceSerifPro-Sup/el/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{sb}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{sb}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-sup-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{sb}{sl}{
+      <-> ssub * SourceSerifPro-Sup/sb/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-Sup}{bx}{sl}{
+      <-> ssub * SourceSerifPro-Sup/b/sl
+}{}
+
 \DeclareFontShape{LY1}{SourceSerifPro-Sup}{bx}{n}{
       <-> ssub * SourceSerifPro-Sup/b/n
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-Sup}{bx}{it}{
       <-> ssub * SourceSerifPro-Sup/b/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-Sup}{bx}{sl}{
-      <-> ssub * SourceSerifPro-Sup/b/sl
 }{}
 
 \endinput

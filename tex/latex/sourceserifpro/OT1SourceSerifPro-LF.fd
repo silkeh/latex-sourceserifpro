@@ -23,12 +23,48 @@
       <-> ssub * SourceSerifPro-LF/l/it
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-lf-ot1
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-lf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{k}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Black-lf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{k}{sl}{
+      <-> ssub * SourceSerifPro-LF/k/it
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{sb}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-lf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{sb}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-lf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{sb}{sl}{
+      <-> ssub * SourceSerifPro-LF/sb/it
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{m}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-It-lf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{m}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-lf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{m}{sl}{
+      <-> ssub * SourceSerifPro-LF/m/it
 }{}
 
 \DeclareFontShape{OT1}{SourceSerifPro-LF}{el}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-lf-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-lf-ot1
 }{}
 
 \DeclareFontShape{OT1}{SourceSerifPro-LF}{el}{sl}{
@@ -47,40 +83,8 @@
       <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{m}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-It-lf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{m}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-lf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{m}{sl}{
-      <-> ssub * SourceSerifPro-LF/m/it
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{k}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Black-lf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-lf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{k}{sl}{
-      <-> ssub * SourceSerifPro-LF/k/it
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{sb}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-lf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{sb}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-lf-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{sb}{sl}{
-      <-> ssub * SourceSerifPro-LF/sb/it
+\DeclareFontShape{OT1}{SourceSerifPro-LF}{bx}{it}{
+      <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
 \DeclareFontShape{OT1}{SourceSerifPro-LF}{bx}{n}{
@@ -89,10 +93,6 @@
 
 \DeclareFontShape{OT1}{SourceSerifPro-LF}{bx}{sl}{
       <-> ssub * SourceSerifPro-LF/b/sl
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-LF}{bx}{it}{
-      <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
 \endinput

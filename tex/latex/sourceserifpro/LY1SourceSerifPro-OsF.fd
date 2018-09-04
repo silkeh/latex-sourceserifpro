@@ -11,64 +11,40 @@
 
 \DeclareFontFamily{LY1}{SourceSerifPro-OsF}{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-osf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-osf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{b}{sl}{
-      <-> ssub * SourceSerifPro-OsF/b/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{el}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-osf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-osf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{el}{sl}{
-      <-> ssub * SourceSerifPro-OsF/el/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{l}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-osf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{l}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Light-osf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{l}{sl}{
-      <-> ssub * SourceSerifPro-OsF/l/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{sb}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-osf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{sb}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-osf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{sb}{sl}{
-      <-> ssub * SourceSerifPro-OsF/sb/it
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-osf-ly1
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-OsF}{k}{n}{
       <-> \SourceSerifPro@@scale SourceSerifPro-Black-osf-ly1
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-osf-ly1
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-OsF}{k}{sl}{
       <-> ssub * SourceSerifPro-OsF/k/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{l}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Light-osf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{l}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-osf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{l}{sl}{
+      <-> ssub * SourceSerifPro-OsF/l/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-osf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-osf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{b}{sl}{
+      <-> ssub * SourceSerifPro-OsF/b/it
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-OsF}{m}{n}{
@@ -83,16 +59,40 @@
       <-> ssub * SourceSerifPro-OsF/m/it
 }{}
 
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-osf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{el}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-osf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{el}{sl}{
+      <-> ssub * SourceSerifPro-OsF/el/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{sb}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-SemiboldIt-osf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{sb}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-osf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{sb}{sl}{
+      <-> ssub * SourceSerifPro-OsF/sb/it
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-OsF}{bx}{n}{
+      <-> ssub * SourceSerifPro-OsF/b/n
+}{}
+
 \DeclareFontShape{LY1}{SourceSerifPro-OsF}{bx}{it}{
       <-> ssub * SourceSerifPro-OsF/b/it
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-OsF}{bx}{sl}{
       <-> ssub * SourceSerifPro-OsF/b/sl
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-OsF}{bx}{n}{
-      <-> ssub * SourceSerifPro-OsF/b/n
 }{}
 
 \endinput

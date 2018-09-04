@@ -11,16 +11,16 @@
 
 \DeclareFontFamily{OT1}{SourceSerifPro-Sup}{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{m}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-sup-ot1
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{l}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Light-sup-ot1
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{m}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-It-sup-ot1
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{l}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-sup-ot1
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{m}{sl}{
-      <-> ssub * SourceSerifPro-Sup/m/it
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{l}{sl}{
+      <-> ssub * SourceSerifPro-Sup/l/it
 }{}
 
 \DeclareFontShape{OT1}{SourceSerifPro-Sup}{k}{it}{
@@ -35,6 +35,42 @@
       <-> ssub * SourceSerifPro-Sup/k/it
 }{}
 
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{m}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Regular-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{m}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-It-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{m}{sl}{
+      <-> ssub * SourceSerifPro-Sup/m/it
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{el}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{el}{sl}{
+      <-> ssub * SourceSerifPro-Sup/el/it
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{b}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{b}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-sup-ot1
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{b}{sl}{
+      <-> ssub * SourceSerifPro-Sup/b/it
+}{}
+
 \DeclareFontShape{OT1}{SourceSerifPro-Sup}{sb}{n}{
       <-> \SourceSerifPro@@scale SourceSerifPro-Semibold-sup-ot1
 }{}
@@ -47,52 +83,16 @@
       <-> ssub * SourceSerifPro-Sup/sb/it
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{l}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Light-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{l}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{l}{sl}{
-      <-> ssub * SourceSerifPro-Sup/l/it
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{el}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{el}{sl}{
-      <-> ssub * SourceSerifPro-Sup/el/it
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{b}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Bold-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{b}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BoldIt-sup-ot1
-}{}
-
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{b}{sl}{
-      <-> ssub * SourceSerifPro-Sup/b/it
-}{}
-
 \DeclareFontShape{OT1}{SourceSerifPro-Sup}{bx}{it}{
       <-> ssub * SourceSerifPro-Sup/b/it
 }{}
 
-\DeclareFontShape{OT1}{SourceSerifPro-Sup}{bx}{sl}{
-      <-> ssub * SourceSerifPro-Sup/b/sl
-}{}
-
 \DeclareFontShape{OT1}{SourceSerifPro-Sup}{bx}{n}{
       <-> ssub * SourceSerifPro-Sup/b/n
+}{}
+
+\DeclareFontShape{OT1}{SourceSerifPro-Sup}{bx}{sl}{
+      <-> ssub * SourceSerifPro-Sup/b/sl
 }{}
 
 \endinput

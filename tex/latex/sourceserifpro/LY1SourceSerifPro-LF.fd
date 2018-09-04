@@ -11,12 +11,24 @@
 
 \DeclareFontFamily{LY1}{SourceSerifPro-LF}{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-LF}{l}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-lf-ly1
+\DeclareFontShape{LY1}{SourceSerifPro-LF}{k}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-lf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-LF}{k}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-Black-lf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-LF}{k}{sl}{
+      <-> ssub * SourceSerifPro-LF/k/it
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-LF}{l}{n}{
       <-> \SourceSerifPro@@scale SourceSerifPro-Light-lf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-LF}{l}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-LightIt-lf-ly1
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-LF}{l}{sl}{
@@ -35,40 +47,28 @@
       <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-LF}{el}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-lf-ly1
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-LF}{el}{it}{
       <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLightIt-lf-ly1
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-LF}{el}{n}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-ExtraLight-lf-ly1
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-LF}{el}{sl}{
       <-> ssub * SourceSerifPro-LF/el/it
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-LF}{m}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-It-lf-ly1
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-LF}{m}{n}{
       <-> \SourceSerifPro@@scale SourceSerifPro-Regular-lf-ly1
 }{}
 
+\DeclareFontShape{LY1}{SourceSerifPro-LF}{m}{it}{
+      <-> \SourceSerifPro@@scale SourceSerifPro-It-lf-ly1
+}{}
+
 \DeclareFontShape{LY1}{SourceSerifPro-LF}{m}{sl}{
       <-> ssub * SourceSerifPro-LF/m/it
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-LF}{k}{n}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-Black-lf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-LF}{k}{it}{
-      <-> \SourceSerifPro@@scale SourceSerifPro-BlackIt-lf-ly1
-}{}
-
-\DeclareFontShape{LY1}{SourceSerifPro-LF}{k}{sl}{
-      <-> ssub * SourceSerifPro-LF/k/it
 }{}
 
 \DeclareFontShape{LY1}{SourceSerifPro-LF}{sb}{it}{
@@ -87,12 +87,12 @@
       <-> ssub * SourceSerifPro-LF/b/sl
 }{}
 
-\DeclareFontShape{LY1}{SourceSerifPro-LF}{bx}{it}{
-      <-> ssub * SourceSerifPro-LF/b/it
-}{}
-
 \DeclareFontShape{LY1}{SourceSerifPro-LF}{bx}{n}{
       <-> ssub * SourceSerifPro-LF/b/n
+}{}
+
+\DeclareFontShape{LY1}{SourceSerifPro-LF}{bx}{it}{
+      <-> ssub * SourceSerifPro-LF/b/it
 }{}
 
 \endinput
