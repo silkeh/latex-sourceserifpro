@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Simple Script to rebuild the fonts in this package.
 
 # Parameters
@@ -17,10 +17,7 @@ autoinst fonts/opentype/$vend/$font/*   \
     -vendor="$vend"                     \
     -typeface="$font"                   \
     -encoding=OT1,T1,LY1,TS1            \
-    -ts1                                \
-    -nosmallcaps                        \
-    -superiors                          \
-    -inferiors                          \
+    -smallcaps                          \
     -fractions                          \
     -noswash                            \
     -notitling                          \
