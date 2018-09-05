@@ -8,7 +8,7 @@
 % Licenced under the LPPL v1.3 or higher.
 %
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
-\ProvidesPackage{sourceserifpro}[2016/04/08 v1.2 Adobe's Source Serif Pro typeface]
+\ProvidesPackage{sourceserifpro}[2018/09/05 v1.3 Adobe's Source Serif Pro typeface]
 
 \RequirePackage{ifxetex,ifluatex,xkeyval}
 
@@ -65,21 +65,21 @@
 % Load OpenType files
 \ifsourceserifpro@otf
 	\RequirePackage{fontspec}
-	
+
 	% Oldstyle/Lining
 	\ifsourceserifpro@oldstyle
 		\def\sourceserifpro@figurestyle{OldStyle}
 	\else
 		\def\sourceserifpro@figurestyle{}
 	\fi
-	
+
 	% Tabular/Proportional
 	\ifsourceserifpro@tabular
 		\def\sourceserifpro@figurealign{Monospaced}
 	\else
 		\def\sourceserifpro@figurealign{Proportional}
 	\fi
-	
+
 	% Black/Semibold/Bold
 	\ifsourceserifpro@black
 		\def\sourceserifpro@boldstyle{Black}
@@ -90,7 +90,7 @@
 			\def\sourceserifpro@boldstyle{Bold}
 		\fi
 	\fi
-	
+
 	% Light/ExtraLight/Regular
 	\ifsourceserifpro@light
 		\def\sourceserifpro@regstyle{Light}
@@ -101,7 +101,7 @@
 			\def\sourceserifpro@regstyle{Regular}
 		\fi
 	\fi
-	
+
 	% Shared features
 	\defaultfontfeatures{
 		Ligatures = TeX ,
@@ -116,33 +116,41 @@
 			  BoldFont       = *-\sourceserifpro@boldstyle ]
 			{SourceSerifPro}
 	\fi
-	
+
 	% Font families
 	% Regular/Bold
 	\newfontfamily\sourceserifpro
 		[ UprightFont    = *-Regular ,
-		  BoldFont       = *-Bold ]
+		  ItalicFont     = *-RegularIt ,
+		  BoldFont       = *-Bold ,
+		  BoldItalicFont = *-BoldIt ]
 		{SourceSerifPro}
-	
+
 	% Light/Semibold
 	\newfontfamily\sourceserifprolight
 		[ UprightFont    = *-Light ,
-		  BoldFont       = *-Semibold ]
+		  ItalicFont     = *-LightIt ,
+		  BoldFont       = *-Semibold ,
+		  BoldItalicFont = *-SemiboldIt ]
 		{SourceSerifPro}
-	
+
 	% ExtraLight/Black
 	\newfontfamily\sourceserifproextreme
-		[ UprightFont    = *-ExtraLight  ,
-		  BoldFont       = *-Black  ]
+		[ UprightFont    = *-ExtraLight ,
+		  ItalicFont     = *-ExtraLightIt ,
+		  BoldFont       = *-Black ,
+		  BoldItalicFont = *-BlackIt ]
 		{SourceSerifPro}
-		
+
 	% Lining figures
 	\newfontfamily\sourceserifprolf
 		[ Numbers        = \sourceserifpro@figurealign ,
 		  UprightFont    = *-\sourceserifpro@regstyle ,
-		  BoldFont       = *-\sourceserifpro@boldstyle ]
+		  ItalicFont     = *-\sourceserifpro@regstyle It ,
+		  BoldFont       = *-\sourceserifpro@boldstyle ,
+		  BoldItalicFont = *-\sourceserifpro@boldstyle It ]
 		{SourceSerifPro}
-	
+
 	% Dont keep all default font features
 	\defaultfontfeatures{}
 
@@ -157,14 +165,14 @@
 	\else
 		\def\sourceserifpro@figurestyle{LF}
 	\fi
-	
+
 	% Tabular/Proportional
 	\ifsourceserifpro@tabular
 		\def\sourceserifpro@figurealign{T}
 	\else
 		\def\sourceserifpro@figurealign{}
 	\fi
-	
+
 	% Black/Semibold/Bold
 	\ifsourceserifpro@black
 		\def\bfseries@rm{k}
@@ -175,7 +183,7 @@
 			\def\bfseries@rm{b}
 		\fi
 	\fi
-	
+
 	% Light/ExtraLight/Regular
 	\ifsourceserifpro@light
 		\def\mdseries@rm{l}
@@ -191,7 +199,7 @@
 	\ifsourceserifpro@rmdefault
 		\edef\rmdefault{SourceSerifPro-\sourceserifpro@figurealign\sourceserifpro@figurestyle}
 	\fi
-	
+
 	% If Source Serif Pro is the default font \oldstylenums needs a new definition.
 	\let\nativeoldstylenums\oldstylenums
 	\ifsourceserifpro@rmdefault
