@@ -3,17 +3,18 @@
 \usepackage[opentype]{sourceserifpro}
 \newcommand*\spA{abcde}
 \newcommand*\spB{01469}
-\newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1\\}
+\newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1 & #1\\}
 \begin{document}
 \begin{tabular}{
 		>{\sourceserifpro}l
+		>{}c
 		>{\sourceserifproextreme}c
 		>{\sourceserifprolight}c
 		>{\sourceserifpro}c
 		>{\sourceserifprolight\bfseries}c
 		>{\sourceserifpro\bfseries}c
 		>{\sourceserifproextreme\bfseries}c }
-	& ExtraLight & Light & Regular & Semibold & Bold & Black \\
+	& Default & ExtraLight & Light & Regular & Semibold & Bold & Black \\
 	normal               \spr
 	italic               \spr[\itshape\spA]
 	small-caps           \spr[\scshape\spA]
