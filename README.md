@@ -1,4 +1,4 @@
-Source Serif Pro v1.3
+Source Serif Pro v1.4
 =====================
 This package provides the Source Serif Pro typeface as a LaTeX package.
 Full documentation and revision history in `sourceserifpro.pdf`.
