@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper,english]{article}
 \usepackage{geometry,metalogo,hyperref,babel,mdwlist,array,multicol}
-\usepackage[default,osf]{sourceserifpro}
+\usepackage[default,osf]{sourceserif}
 \usepackage[scaled=.95]{sourcecodepro}
 
 \hypersetup{
@@ -13,19 +13,19 @@
 \newcommand*\file[1]{\href{run:#1.pdf}{#1}}
 
 \title{\bfseries
-	\Huge sourceserifpro\\
-	\Large Adobe's Source Serif Pro typeface for \LaTeX
+	\Huge sourceserif\\
+	\Large Adobe's Source Serif typeface for \LaTeX
 }
 
 \author{Silke Hofstra, \href{mailto:tex@slxh.nl}{tex@slxh.nl}}
-\date{Documentation for sourceserifpro v1.4.\\ \today}
+\date{Documentation for sourceserif v2.0.\\ \today}
 
 \begin{document}
 \maketitle
 \begin{multicols}{2}
-This package provides the Source Serif Pro font in an easy to use way. For \XeLaTeX\ and \LuaLaTeX\ users the original OpenType fonts from \href{https://github.com/adobe-fonts/source-serif-pro}{GitHub} are used. The entire font family is included.
+This package provides the Source Serif font in an easy to use way. For \XeLaTeX\ and \LuaLaTeX\ users the original OpenType fonts from \href{https://github.com/adobe-fonts/source-serif}{GitHub} are used. The entire font family is included.
 
-This package is also available on \href{https://github.com/silkeh/latex-sourceserifpro}{GitHub}.
+This package is also available on \href{https://github.com/silkeh/latex-sourceserif}{GitHub}.
 
 \section{Options}
 The package has the following options:
@@ -40,9 +40,9 @@ The package has the following options:
 	\item \textbf{light}:          \texttt{\textbackslash mdseries} is light.
 	\item \textbf{extralight}:     \texttt{\textbackslash mdseries} is extra light.
 	\item \textbf{regular}:        \texttt{\textbackslash mdseries} is regular.
-	\item \textbf{scale, scaled}:  Change the scaling with a factor. For example:  \texttt{scale=.5}
-	\item \textbf{default}:        Source Serif Pro is set as the default font family.
-	\item \textbf{normdefault}:    Source Serif Pro is not set as the roman (serif) family.
+	\item \textbf{scale, scaled}:  Change the scaling with a factor. For example: \texttt{scale=.5}
+	\item \textbf{default}:        Source Serif is set as the default font family.
+	\item \textbf{normdefault}:    Source Serif is not set as the roman (serif) family.
 	\item \textbf{type1, t1}:      Override automatic detection and use the Type 1 fonts.
 	\item \textbf{opentype, otf}:  Override automatic detection and use OpenType fonts.
 \end{itemize*}
@@ -51,16 +51,16 @@ The following options are enabled by default: lining, proportional, bold and reg
 \section{Commands}
 Commands for all weights are also provided for \XeLaTeX\ and \LuaLaTeX\ users.
 \begin{itemize*}
-	\item \texttt{\bfseries \textbackslash sourceserifpro}
+	\item \texttt{\bfseries \textbackslash sourceserif}
 		-- the regular and bold weights.
-	\item \texttt{\bfseries \textbackslash sourceserifprolight}
+	\item \texttt{\bfseries \textbackslash sourceseriflight}
 		-- the light and semibold weights.
-	\item \texttt{\bfseries \textbackslash sourceserifproextreme}
+	\item \texttt{\bfseries \textbackslash sourceserifextreme}
 		-- the extra light and black weights.
 \end{itemize*}
 
 \section{Licence}
-Adobe's Source Serif Pro typeface is available under the \href{http://scripts.sil.org/OFL}{SIL Open Font License 1.1}.\\
+Adobe's Source Serif typeface is available under the \href{http://scripts.sil.org/OFL}{SIL Open Font License 1.1}.\\
 All \LaTeX\ code is available under the \href{http://www.latex-project.org/lppl/}{\LaTeX\ project public license} v1.3 or later.
 
 \section{Specimen}
@@ -74,31 +74,37 @@ A complete list of available font features is available on page \pageref{sec:otf
 
 \subsection{Files}
 \begin{itemize*}
-	\item SourceSerifPro-Black.otf
-	\item SourceSerifPro-BlackIt.otf
-	\item SourceSerifPro-Bold.otf
-	\item SourceSerifPro-BoldIt.otf
-	\item SourceSerifPro-ExtraLight.otf
-	\item SourceSerifPro-ExtraLightIt.otf
-	\item SourceSerifPro-Light.otf
-	\item SourceSerifPro-LightIt.otf
-	\item SourceSerifPro-Regular.otf
-	\item SourceSerifPro-RegularIt.otf
-	\item SourceSerifPro-Semibold.otf
-	\item SourceSerifPro-SemiboldIt.otf
+	\item SourceSerifFour-Black.otf
+	\item SourceSerifFour-BlackIt.otf
+	\item SourceSerifFour-Bold.otf
+	\item SourceSerifFour-BoldIt.otf
+	\item SourceSerifFour-ExtraLight.otf
+	\item SourceSerifFour-ExtraLightIt.otf
+	\item SourceSerifFour-Light.otf
+	\item SourceSerifFour-LightIt.otf
+	\item SourceSerifFour-Regular.otf
+	\item SourceSerifFour-RegularIt.otf
+	\item SourceSerifFour-Semibold.otf
+	\item SourceSerifFour-SemiboldIt.otf
 \end{itemize*}
 
 \section{Type1}
 The following Type1 font families are included:
 \begin{itemize*}
-	\item SourceSerifPro-LF
-	\item SourceSerifPro-TLF
-	\item SourceSerifPro-OsF
-	\item SourceSerifPro-TOsF
+	\item SourceSerifFour-LF
+	\item SourceSerifFour-TLF
+	\item SourceSerifFour-OsF
+	\item SourceSerifFour-TOsF
 \end{itemize*}
 With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘k’ and shape ‘n’, ‘i’ and ‘sc’.
 
 \section{Version history}
+\subsection*{2.0}
+\begin{itemize*}
+	\item Update fonts to 4.004
+	\item Rename package to \texttt{sourceserif}
+\end{itemize*}
+
 \subsection*{1.4}
 \begin{itemize*}
 	\item Fix OpenType italics
@@ -139,16 +145,16 @@ With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘k’ and shape ‘
 \subsection{OpenType}
 \begin{figure}[ht]
 	\centering
-	\includegraphics{sourceserifpro-otf-specimen}
+	\includegraphics{sourceserif-otf-specimen}
 \end{figure}
-This table can also be found in \file{sourceserifpro-otf-specimen}.
+This table can also be found in \file{sourceserif-otf-specimen}.
 
 \subsection{Type1}
 \begin{figure}[ht]
 	\centering
-	\includegraphics{sourceserifpro-type1-specimen}
+	\includegraphics{sourceserif-type1-specimen}
 \end{figure}
-This table can also be found in \file{sourceserifpro-type1-specimen}.
+This table can also be found in \file{sourceserif-type1-specimen}.
 
 \newpage
 \section{Opentype features}

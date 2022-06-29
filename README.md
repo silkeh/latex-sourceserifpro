@@ -1,6 +1,6 @@
-Source Serif Pro v1.4
-=====================
-This package provides the Source Serif Pro typeface as a LaTeX package.
+Source Serif
+============
+This package provides the Source Serif typeface as a LaTeX package.
 Full documentation and revision history in `sourceserifpro.pdf`.
 
 Options
@@ -18,8 +18,8 @@ The following options can be used:
 * `extralight`:    `\mdseries` is extra light.
 * `regular`:       `\mdseries` is regular.
 * `scale, scaled`: set scaling for the font, eg: `scale=.5`
-* `default`:       Source Serif Pro is set as default font family.
-* `normdefault`:   Source Serif Pro is not set as roman (serif) family.
+* `default`:       Source Serif is set as default font family.
+* `normdefault`:   Source Serif is not set as roman (serif) family.
 * `type1, t1`:     override detection and load the Type1 font family.
 * `opentype, otf`: override detection and load the OpenType font family.
 

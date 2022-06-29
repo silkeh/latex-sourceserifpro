@@ -1,0 +1,49 @@
+% Source Serif for LaTeX
+%
+% Silke Hofstra, tex@slxh.nl
+%
+% This file selects either the OTF or the TYPE1 fonts based on
+% the LaTeX engine used.
+%
+% Licenced under the LPPL v1.3 or higher.
+%
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{sourceserifpro}[2025/04/05 v2.0 Compatibility package for sourceserif]
+
+\RequirePackage{ifxetex,ifluatex,xkeyval}
+
+\DeclareOptionX{lining}      {\PassOptionsToPackage{lining}{sourceserif}}
+\DeclareOptionX{nf}          {\PassOptionsToPackage{nf}{sourceserif}}
+\DeclareOptionX{lf}          {\PassOptionsToPackage{lf}{sourceserif}}
+\DeclareOptionX{oldstyle}    {\PassOptionsToPackage{oldstyle}{sourceserif}}
+\DeclareOptionX{osf}         {\PassOptionsToPackage{osf}{sourceserif}}
+\DeclareOptionX{tabular}     {\PassOptionsToPackage{tabular}{sourceserif}}
+\DeclareOptionX{proportional}{\PassOptionsToPackage{proportional}{sourceserif}}
+\DeclareOptionX{black}       {\PassOptionsToPackage{black}{sourceserif}}
+\DeclareOptionX{semibold}    {\PassOptionsToPackage{semibold}{sourceserif}}
+\DeclareOptionX{bold}        {\PassOptionsToPackage{bold}{sourceserif}}
+\DeclareOptionX{light}       {\PassOptionsToPackage{light}{sourceserif}}
+\DeclareOptionX{extralight}  {\PassOptionsToPackage{extralight}{sourceserif}}
+\DeclareOptionX{regular}     {\PassOptionsToPackage{regular}{sourceserif}}
+\DeclareOptionX{scale}       {\PassOptionsToPackage{scale}{sourceserif}}
+\DeclareOptionX{scaled}      {\PassOptionsToPackage{scaled}{sourceserif}}
+\DeclareOptionX{default}     {\PassOptionsToPackage{default}{sourceserif}}
+\DeclareOptionX{rmdefault}   {\PassOptionsToPackage{rmdefault}{sourceserif}}
+\DeclareOptionX{normdefault} {\PassOptionsToPackage{normdefault}{sourceserif}}
+\DeclareOptionX{type1}       {\PassOptionsToPackage{type1}{sourceserif}}
+\DeclareOptionX{t1}          {\PassOptionsToPackage{t1}{sourceserif}}
+\DeclareOptionX{opentype}    {\PassOptionsToPackage{opentype}{sourceserif}}
+\DeclareOptionX{otf}         {\PassOptionsToPackage{otf}{sourceserif}}
+
+% Default options
+\ExecuteOptionsX{rmdefault,lining,proportional,bold,regular}
+\ProcessOptionsX\relax
+
+% Backwards compatibility
+\def\sourceserifpro{\sourceserif}
+\def\sourceserifprolight{\sourceseriflight}
+\def\sourceserifproextreme{\sourceserifextreme}
+\def\sourceserifprolf{\sourceseriflf}
+
+\PackageWarningNoLine{sourceserifpro}{This package has been replaced by `sourceserif'}
+\RequirePackage{sourceserif}

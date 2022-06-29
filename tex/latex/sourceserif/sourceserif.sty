@@ -1,0 +1,226 @@
+% Source Serif for LaTeX
+%
+% Silke Hofstra, tex@slxh.nl
+%
+% This file selects either the OTF or the TYPE1 fonts based on
+% the LaTeX engine used.
+%
+% Licenced under the LPPL v1.3 or higher.
+%
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{sourceserif}[2022/06/29 v2.0 Adobe's Source Serif typeface]
+
+\RequirePackage{ifxetex,ifluatex,xkeyval}
+
+% Switches
+\newif\ifsourceserif@otf
+\newif\ifsourceserif@default
+\newif\ifsourceserif@rmdefault
+\newif\ifsourceserif@oldstyle
+\newif\ifsourceserif@tabular
+\newif\ifsourceserif@black
+\newif\ifsourceserif@semibold
+\newif\ifsourceserif@light
+\newif\ifsourceserif@extralight
+
+% Scaling command
+\newcommand*{\SourceSerifFour@scale}{1}
+
+% Use OpenType fonts for XeTeX and LuaTeX.
+\ifxetex
+	\sourceserif@otftrue
+\else
+	\ifluatex
+		\sourceserif@otftrue
+	\fi
+\fi
+
+\DeclareOptionX{lining}      {\sourceserif@oldstylefalse}
+\DeclareOptionX{nf}          {\sourceserif@oldstylefalse}
+\DeclareOptionX{lf}          {\sourceserif@oldstylefalse}
+\DeclareOptionX{oldstyle}    {\sourceserif@oldstyletrue}
+\DeclareOptionX{osf}         {\sourceserif@oldstyletrue}
+\DeclareOptionX{tabular}     {\sourceserif@tabulartrue}
+\DeclareOptionX{proportional}{\sourceserif@tabularfalse}
+\DeclareOptionX{black}       {\sourceserif@blacktrue \sourceserif@semiboldfalse}
+\DeclareOptionX{semibold}    {\sourceserif@blackfalse\sourceserif@semiboldtrue}
+\DeclareOptionX{bold}        {\sourceserif@blackfalse\sourceserif@semiboldfalse}
+\DeclareOptionX{light}       {\sourceserif@lighttrue \sourceserif@extralightfalse}
+\DeclareOptionX{extralight}  {\sourceserif@lightfalse\sourceserif@extralighttrue}
+\DeclareOptionX{regular}     {\sourceserif@lightfalse\sourceserif@extralightfalse}
+\DeclareOptionX{scale}       {\renewcommand*{\SourceSerifFour@scale}{#1}}
+\DeclareOptionX{scaled}      {\renewcommand*{\SourceSerifFour@scale}{#1}}
+\DeclareOptionX{default}     {\sourceserif@defaulttrue}
+\DeclareOptionX{rmdefault}   {\sourceserif@rmdefaulttrue}
+\DeclareOptionX{normdefault} {\sourceserif@rmdefaultfalse}
+\DeclareOptionX{type1}       {\sourceserif@otffalse}
+\DeclareOptionX{t1}          {\sourceserif@otffalse}
+\DeclareOptionX{opentype}    {\sourceserif@otftrue}
+\DeclareOptionX{otf}         {\sourceserif@otftrue}
+
+% Default options
+\ExecuteOptionsX{rmdefault,lining,proportional,bold,regular}
+\ProcessOptionsX\relax
+
+% Load OpenType files
+\ifsourceserif@otf
+	\RequirePackage{fontspec}
+
+	% Oldstyle/Lining
+	\ifsourceserif@oldstyle
+		\def\sourceserif@figurestyle{OldStyle}
+	\else
+		\def\sourceserif@figurestyle{}
+	\fi
+
+	% Tabular/Proportional
+	\ifsourceserif@tabular
+		\def\sourceserif@figurealign{Monospaced}
+	\else
+		\def\sourceserif@figurealign{Proportional}
+	\fi
+
+	% Black/Semibold/Bold
+	\ifsourceserif@black
+		\def\sourceserif@boldstyle{Black}
+	\else
+		\ifsourceserif@semibold
+			\def\sourceserif@boldstyle{Semibold}
+		\else
+			\def\sourceserif@boldstyle{Bold}
+		\fi
+	\fi
+
+	% Light/ExtraLight/Regular
+	\ifsourceserif@light
+		\def\sourceserif@regstyle{Light}
+	\else
+		\ifsourceserif@extralight
+			\def\sourceserif@regstyle{ExtraLight}
+		\else
+			\def\sourceserif@regstyle{Regular}
+		\fi
+	\fi
+
+	% Shared features
+	\defaultfontfeatures{
+		Ligatures = TeX ,
+		Numbers   = {\sourceserif@figurealign , \sourceserif@figurestyle } ,
+		Scale     = \SourceSerifFour@scale ,
+		Extension = .otf }
+
+	% Serif font
+	\ifsourceserif@rmdefault
+		\setmainfont
+			[ UprightFont    = *-\sourceserif@regstyle ,
+			  ItalicFont     = *-\sourceserif@regstyle It ,
+			  BoldFont       = *-\sourceserif@boldstyle ,
+			  BoldItalicFont = *-\sourceserif@boldstyle It ]
+			{SourceSerif4}
+	\fi
+
+	% Font families
+	% Regular/Bold
+	\newfontfamily\sourceserif
+		[ UprightFont    = *-Regular ,
+		  ItalicFont     = *-RegularIt ,
+		  BoldFont       = *-Bold ,
+		  BoldItalicFont = *-BoldIt ]
+		{SourceSerif4}
+
+	% Light/Semibold
+	\newfontfamily\sourceseriflight
+		[ UprightFont    = *-Light ,
+		  ItalicFont     = *-LightIt ,
+		  BoldFont       = *-Semibold ,
+		  BoldItalicFont = *-SemiboldIt ]
+		{SourceSerif4}
+
+	% ExtraLight/Black
+	\newfontfamily\sourceserifextreme
+		[ UprightFont    = *-ExtraLight ,
+		  ItalicFont     = *-ExtraLightIt ,
+		  BoldFont       = *-Black ,
+		  BoldItalicFont = *-BlackIt ]
+		{SourceSerif4}
+
+	% Lining figures
+	\newfontfamily\sourceseriflf
+		[ Numbers        = \sourceserif@figurealign ,
+		  UprightFont    = *-\sourceserif@regstyle ,
+		  ItalicFont     = *-\sourceserif@regstyle It ,
+		  BoldFont       = *-\sourceserif@boldstyle ,
+		  BoldItalicFont = *-\sourceserif@boldstyle It ]
+		{SourceSerif4}
+
+	% Dont keep all default font features
+	\defaultfontfeatures{}
+
+% Load type1 font.
+\else
+	\RequirePackage[OT1,LY1,T1]{fontenc}
+	\RequirePackage{mweights}
+
+	% Oldstyle/Lining
+	\ifsourceserif@oldstyle
+		\def\sourceserif@figurestyle{OsF}
+	\else
+		\def\sourceserif@figurestyle{LF}
+	\fi
+
+	% Tabular/Proportional
+	\ifsourceserif@tabular
+		\def\sourceserif@figurealign{T}
+	\else
+		\def\sourceserif@figurealign{}
+	\fi
+
+	% Black/Semibold/Bold
+	\ifsourceserif@black
+		\def\bfseries@rm{k}
+	\else
+		\ifsourceserif@semibold
+			\def\bfseries@rm{sb}
+		\else
+			\def\bfseries@rm{b}
+		\fi
+	\fi
+
+	% Light/ExtraLight/Regular
+	\ifsourceserif@light
+		\def\mdseries@rm{l}
+	\else
+		\ifsourceserif@extralight
+			\def\mdseries@rm{el}
+		\else
+			\def\mdseries@rm{m}
+		\fi
+	\fi
+
+	% Sans serif font
+	\ifsourceserif@rmdefault
+		\edef\rmdefault{SourceSerifFour-\sourceserif@figurealign\sourceserif@figurestyle}
+	\fi
+
+	% If Source Serif is the default font \oldstylenums needs a new definition.
+	\let\nativeoldstylenums\oldstylenums
+	\ifsourceserif@rmdefault
+		\renewcommand*\oldstylenums[1]{%
+			\begingroup
+				\ifmmode
+					\mathgroup\symletters #1%
+				\else
+					\fontfamily{SourceSerifFour-\sourceserif@figurealign OsF}\selectfont #1%
+				\fi
+			\endgroup
+		}
+		\edef\seriesdefault{\mdseries@rm}
+	\fi
+\fi
+
+% Set default font family
+\ifsourceserif@default
+	\edef\familydefault{\rmdefault}
+\fi
+
+\endinput
