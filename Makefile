@@ -15,7 +15,7 @@ all: $(PACKAGE).tds.zip
 
 fonts: $(PKG_OUT)
 
-docs: $(PKG_OUT)
+docs: fonts
 	$(MAKE) -C $(DOC_DIR)
 
 $(PACKAGE).tds.zip: $(PACKAGE).files
@@ -49,7 +49,7 @@ $(PKG_OUT): $(OTF_DIR)/$(OTF_NAME)-Regular.otf $(ENCS)
 		-noswash                            \
 		-notitling                          \
 		-noornaments
-
+	if [ $${UID:-0} -ne 0 ]; then updmap -user; fi
 	mv $(TEX_DIR)/$(FONTNAME).sty $(PKG_OUT)
 
 clean:
