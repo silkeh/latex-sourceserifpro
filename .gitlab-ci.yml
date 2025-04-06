@@ -18,4 +18,5 @@ build:
     - make
   artifacts:
     paths:
+      - "*.pdf"
       - "*.zip"
