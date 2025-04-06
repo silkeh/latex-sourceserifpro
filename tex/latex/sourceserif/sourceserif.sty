@@ -177,23 +177,23 @@
 
 	% Black/Semibold/Bold
 	\ifsourceserif@black
-		\def\bfseries@rm{k}
+		\def\bfseries@rm{black}
 	\else
 		\ifsourceserif@semibold
-			\def\bfseries@rm{sb}
+			\def\bfseries@rm{semibold}
 		\else
-			\def\bfseries@rm{b}
+			\def\bfseries@rm{bold}
 		\fi
 	\fi
 
 	% Light/ExtraLight/Regular
 	\ifsourceserif@light
-		\def\mdseries@rm{l}
+		\def\mdseries@rm{light}
 	\else
 		\ifsourceserif@extralight
-			\def\mdseries@rm{el}
+			\def\mdseries@rm{extralight}
 		\else
-			\def\mdseries@rm{m}
+			\def\mdseries@rm{regular}
 		\fi
 	\fi
 

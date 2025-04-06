@@ -3,19 +3,17 @@
 \usepackage[opentype]{sourceserif}
 \newcommand*\spA{abcde}
 \newcommand*\spB{01469}
-\newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1 & #1\\}
+\newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1\\}
 \begin{document}
 \begin{tabular}{
 		>{\sourceserif}l
-		>{}c
 		>{\sourceserifextreme}c
 		>{\sourceseriflight}c
 		>{\sourceserif}c
 		>{\sourceseriflight\bfseries}c
 		>{\sourceserif\bfseries}c
 		>{\sourceserifextreme\bfseries}c }
-	& Default & ExtraLight & Light & Regular & Semibold & Bold & Black \\
-	normal               \spr
+	& ExtraLight & Light & Regular & Semibold & Bold & Black \\
 	italic               \spr[\itshape\spA]
 	small-caps           \spr[\scshape\spA]
 	capitals             \spr[\MakeUppercase\spA]
