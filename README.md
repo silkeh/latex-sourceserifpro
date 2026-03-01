@@ -1,7 +1,7 @@
 Source Serif
 ============
 This package provides the Source Serif typeface as a LaTeX package.
-Full documentation and revision history in `sourceserifpro.pdf`.
+Full documentation and revision history in [the PDF documentation][pdf].
 
 Options
 -------
@@ -30,3 +30,5 @@ Fonts are provided under the SIL Open Font License 1.1.
 LaTeX source is licensed under the LPPL version 1.3 or higher.
 
 Enjoy!
+
+[pdf]: https://gitlab.com/slxh/latex/sourceserif/-/jobs/artifacts/master/file/sourceserif.pdf?job=build
